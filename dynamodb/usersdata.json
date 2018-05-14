@@ -1,0 +1,19 @@
+[
+    {
+        "email": "zcharnell@gmail.com",
+        "name": "Tom Ford",
+        "teams": [{
+            "name": "The Very Best",
+            "season": "22",
+            "weeks": {
+                "week1": {
+                    "contestants": [],
+                    "goldenGirl": null,
+                    "eliminationPick": null,
+                    "points": 0
+                }
+            },
+            "totalPoints": 0
+        }]
+    }
+]

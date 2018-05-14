@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1000,
+        "season": 22,
+        "name": "Corinne",
+        "fullName": "Corinne Olympios",
+        "age": 24,
+        "title": null,
+        "wentHome": false,
+        "points": {
+            "week1": {
+                "total": 0,
+                "singleDateRose": 1,
+                "groupDateRose": 1,
+                "advancedToNextRound": 1,
+                "meetParentsInHometown": 1,
+                "meetBachelorsParents": 1,
+                "winShow": 1,
+                "eliminated": 1,
+                "kiss": 1,
+                "makeOut": 1,
+                "bachelorComplimentsAppearance": 1,
+                "longTermImplication": 1,
+                "bathingSuit": 1,
+                "nakedScene": 1,
+                "invitedToGroupDate": 1,
+                "cry": 1,
+                "unauthorizedContactWithBachelor": 1,
+                "requiresMedicalAttention": 1,
+                "bleepForSwearing": 1,
+                "involvedInBitchFight": 1,
+                "obviouslyDrunk": 1,
+                "interruptsOrStealsBachelor": 1
+            }
+        }
+    }
+]
