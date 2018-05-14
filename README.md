@@ -1,8 +1,10 @@
 # Fantasy Bachelor Bracket Creator
 
-This is a project I put together in a couple of days back in January for the most recent season of Bachelor. By no means is it a great representation of React best practices or the use of Lambda, though it provides a good look at a rapid prototype.
+This is a project I put together in a couple of days back in January 2018 for Season 22 of Bachelor. By no means is it a great representation of React best practices or the use of Lambda, though it provides a look at a rapid prototype of a serverless React + Lambda + DynamoDB.
 
 Uses React for the front end and Lambda + DynamoDB for the back end.
+
+View the site at: http://bachelor.zcharnell.com/
 
 ## Directories
 
