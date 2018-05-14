@@ -1,0 +1,54 @@
+{
+  "name": "react-and-aws",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "class-autobind": "^0.1.4",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0",
+    "npm-run-all": "^4.1.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.22.0",
+    "bourbon-neat": "^2.0.0",
+    "classnames": "^2.2.5",
+    "express": "^4.15.3",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "material-ui": "^0.17.0",
+    "morgan": "^1.8.2",
+    "node-sass": "^4.5.0",
+    "normalizr": "^3.2.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-google-login": "^2.8.9",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "0.9.5",
+    "react-scroll": "^1.5.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.1",
+    "redux-thunk": "^2.2.0",
+    "request": "^2.81.0"
+  },
+  "engines": {
+    "node": "6.11.1"
+  },
+  "scripts": {
+    "deploy": "npm run build && ./s3-build.sh",
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "NODE_PATH=src/ react-scripts start",
+    "start-windows": "NODE_PATH=src/ && react-scripts start",
+    "build": "npm run build-css && NODE_PATH=src/ react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass src/ node_modules/bourbon-neat/core/ -o src/",
+    "watch-css": "npm run build-css && node-sass src/ node_modules/bourbon-neat/core/ -o src/ --watch --recursive"
+  },
+  "proxy": "http://localhost:8080"
+}

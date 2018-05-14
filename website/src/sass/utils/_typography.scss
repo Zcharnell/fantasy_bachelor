@@ -1,0 +1,53 @@
+$fontSize:16px;
+
+////////////////////////////////////////////////////////////
+//		[@FONT-FACE]
+////////////////////////////////////////////////////////////
+@mixin font-face($fontFamily, $fileName, $fontStyle, $fontWeight) {
+	@font-face {
+		font-family: $fontFamily;
+		src: url('./assets/fonts/#{$fontFamily}/#{$fileName}.ttf') format('truetype');
+		// src: url('../../assets/fonts/#{$fontFamily}/#{$fileName}.eot');
+		// src: url('../../assets/fonts/#{$fontFamily}/#{$fileName}.eot?#iefix') format('embedded-opentype'),
+			// url('../../assets/fonts/#{$fontFamily}/#{$fileName}.woff') format('woff'),
+			// url('../../assets/fonts/#{$fontFamily}/#{$fileName}.ttf') format('truetype');
+		font-style: $fontStyle;
+		font-weight: $fontWeight;
+	}
+}
+
+@mixin text-format($size:$fontSize, $lineHeight:null, $color:null, $family:null, $weight:null, $transform:null){
+	@include font-size($size);
+
+	@if $lineHeight == null{line-height:calculateRem($size);}
+	@else {line-height:calculateRem($lineHeight);}
+
+
+	@if $color != null {color:$color;}
+	@if $family != null {font-family:$family;}
+	@if $weight != null {font-weight:$weight;}
+	@if $transform != null {text-transform:$transform;}
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	// font-size: calculateRem($size);
+}
+
+@function calculateRem($size) {
+	$remSize: $size / $fontSize;
+	@return $remSize * 1rem;
+}
+
+//--------------------------------------------------
+//	roboto
+//--------------------------------------------------
+$Roboto: 'Roboto', sans-serif;
+
+
+@include font-face("Roboto",Roboto-Regular,normal,normal);
+@include font-face("Roboto",Roboto-Thin,normal,100);
+@include font-face("Roboto",Roboto-Light,normal,300);
+@include font-face("Roboto",Roboto-Medium,normal,500);
+@include font-face("Roboto",Roboto-Bold,normal,700);
+@include font-face("Roboto",Roboto-Black,normal,900);

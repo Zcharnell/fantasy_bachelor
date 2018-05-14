@@ -1,0 +1,10 @@
+{
+	"en_us": {
+		"POST_CHANNEL_SUBSCRIPTION_REQUEST": "Subcribing to channel...",
+		"POST_CHANNEL_SUBSCRIPTION_SUCCESS": "Subcribed to channel successfully!",
+		"POST_CHANNEL_SUBSCRIPTION_FAILURE": "Failed to subscribe to channel. Error: ",
+		"DELETE_CHANNEL_SUBSCRIPTION_REQUEST": "Unsubscribing from channel...",
+		"DELETE_CHANNEL_SUBSCRIPTION_SUCCESS": "Unsubscribed from channel successfully!",
+		"DELETE_CHANNEL_SUBSCRIPTION_FAILURE": "Failed to unsubscribe from channel. Error: "
+	}
+}
